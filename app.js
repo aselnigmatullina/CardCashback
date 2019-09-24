@@ -1,7 +1,4 @@
 console.log('worked');
-//regular purchases: 1% cashback 0-1_000
-//Increased Cashback purchases: 5% cashback 1_001-10_000
-//Special offers purchases: 30% 10_001
 
 const currentPurchases=100;
 
