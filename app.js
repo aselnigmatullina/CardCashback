@@ -1,5 +1,6 @@
 console.log('worked');
 
+
 const currentPurchases=100;
 
 const regularPurchases = currentPurchases*0.01;
