@@ -16,8 +16,9 @@ if (currentPurchases > 0 && currentPurchases <= 1000) {
     cardCashback = increasedCashbackPurchases;
 }
 
-if (cardCashback > 3000) {
-    cardCashback = 3000;
-    console.log("Sorry,but we can't accrue more");
+let maxCardCashback = 3000;
+if (cardCashback > maxCardCashback) {
+    cardCashback = maxCardCashback;
+    
 }
 console.log(cardCashback);
