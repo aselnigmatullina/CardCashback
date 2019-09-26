@@ -1,24 +1,16 @@
 console.log('worked');
 
-const currentPurchases = 10100;
+const regularPurchases = 100;
+const increasedPurchases = 500;
+const specialOffersPurchases = 1000;
 
-const regularPurchases = currentPurchases*0.01;
-const increasedCashbackPurchases = currentPurchases*0.05;
-const specialOffersPurchases = currentPurchases*0.3;
+const regularPurchasesCashback = regularPurchases*0.01;
+const increasedPurchasesCashback = increasedPurchases*0.05;
+const specialOffersPurchasesCashback = specialOffersPurchases*0.3;
 
-
-let cardCashback;
-if (currentPurchases > 0 && currentPurchases <= 1000) {
-    cardCashback = regularPurchases;
-} else if(currentPurchases > 10000) { 
-    cardCashback = specialOffersPurchases;
-} else {
-    cardCashback = increasedCashbackPurchases;
-}
-
+let overallCardCashback = regularPurchasesCashback + increasedPurchasesCashback + specialOffersPurchasesCashback;
 let maxCardCashback = 3000;
-if (cardCashback > maxCardCashback) {
-    cardCashback = maxCardCashback;
-    
+if (overallCardCashback > maxCardCashback) {
+    overallCardCashback = maxCardCashback;
 }
-console.log(cardCashback);
+console.log(overallCardCashback);
